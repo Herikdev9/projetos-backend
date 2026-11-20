@@ -11,7 +11,7 @@ app.get('/', (req,res) => {
 
 //Rota POST (simulando o envio de dados)
 app.post('/usuarios', (req,res) =>{
-    const{ nome, cargo } = req.bory;
+    const{ nome, cargo } = req.body;
     res.status(201).json({
         status: 'criado',
         usuario:{ nome, cargo }
